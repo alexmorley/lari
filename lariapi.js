@@ -13,7 +13,7 @@ var LariJobManager=require(__dirname+'/larijobmanager.js').LariJobManager;
 // Here's the global job manager
 var JM=new LariJobManager();
 
-var stats = require('container-stats.js')
+var stats = require(__dirname+'/container-stats.js')
 
 // LariProcessCache is used to cache processes that have already run
 var LariProcessCache=require(__dirname+'/lariprocesscache.js').LariProcessCache;
