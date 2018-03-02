@@ -16,7 +16,7 @@ function LariClient() {
 	this.cancelProcess=function(job_id,opts,callback) {cancelProcess(job_id,opts,callback);};
 	this.findFile=function(prv,opts,callback) {findFile(prv,opts,callback);};
 	this.getFileContent=function(prv,opts,callback) {getFileContent(prv,opts,callback);};
-	this.getStats=function(opts,callback) {getStats(opts, callback};
+	this.getStats=function(opts,callback) {getStats(opts, callback);};
     this.clearSpecCache=function() {m_spec_cache={};};
 	this.setDirectLariCall=function(func) {m_direct_lari_call=func;};
 
