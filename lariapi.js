@@ -220,6 +220,7 @@ function handle_api_3(cmd,query,closer,callback) {
 				callback(resp);
 			}
         });
+    }
 	else {
 		// The command is not supported
 		callback({success:false,error:'Unsupported command: '+cmd});	
