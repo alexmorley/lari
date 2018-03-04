@@ -128,7 +128,7 @@ if (process.env.LISTEN_PORT) {
 			// (To access the content of larger output files, use kbucket.upload)
 			handle_api('get-file-content',req,resp);
 		}
-		else if (path=='/api/poll-from-container') {
+        else if (path=='/api/poll-from-container') {
 			// A child lari server (container) is sending a poll request
 			// This server will reply with requests from the client that need to be handled by the child
 			handle_api('poll-from-container',req,resp);
@@ -138,6 +138,11 @@ if (process.env.LISTEN_PORT) {
 			// These are responses to requests (initiated by the client) and returned in the poll-from-container above
 			handle_api('responses-from-container',req,resp);
 		}
+        else if (path=='/api/get-stats',req,resp) {
+            // Get cpu and memory statistics on the child server
+            handle_api('get-stats', req, resp);
+        }
+
 		else {
 			next();
 		}
