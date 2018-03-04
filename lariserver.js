@@ -146,6 +146,7 @@ if (process.env.LISTEN_PORT) {
 	// Start listening
 	app.listen(app.get('port'), '0.0.0.0', function() {
 	  console.log ('lari is running on port', app.get('port'));
+      console.log ('from 0.0.0.0');
 	});
     
 
