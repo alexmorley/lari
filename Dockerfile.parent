@@ -23,7 +23,7 @@ ENV LISTEN_PORT 6057 # use * for default
 # Not used yet
 ##   DOCSTOR_URL (optional)
 ##   CONFIG_DOC (optional)
-ARG CACHE_DATE=2018-03-04:3
+ARG CACHE_DATE=2018-03-04:4
 
 WORKDIR /work
 RUN echo ""
