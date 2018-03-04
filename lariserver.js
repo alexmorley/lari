@@ -98,7 +98,8 @@ if (process.env.LISTEN_PORT) {
 
 	app.use(function(req,resp,next) {
 		// A request has been received either from the client or from a child lari server
-		var url_parts = require('url').parse(req.url,true);
+		console.log("API 1");
+        var url_parts = require('url').parse(req.url,true);
 		var host=url_parts.host;
 		var path=url_parts.pathname;
 		var query=url_parts.query;
