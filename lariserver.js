@@ -153,6 +153,8 @@ if (process.env.LISTEN_PORT) {
 		var host=url_parts.host;
 		var path=url_parts.pathname;
 		var query=url_parts.query;
+        
+        console.log("Request recieved.")
 
 		if (REQ.method == 'OPTIONS') {
 			var headers = {};
