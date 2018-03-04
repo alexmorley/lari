@@ -94,7 +94,7 @@ if (process.env.LISTEN_PORT) {
 		do_update_lari_config();
 	},100);
 	*/
-
+    app.get('/', (req, res) => res.send('This is a parent Lari Server.'))
 
 	app.use(function(req,resp,next) {
 		// A request has been received either from the client or from a child lari server
@@ -147,6 +147,7 @@ if (process.env.LISTEN_PORT) {
 	app.listen(app.get('port'), function() {
 	  console.log ('lari is running on port', app.get('port'));
 	});
+    
 
 	function handle_api(cmd,REQ,RESP) {
 		// handle an api command from the client or child lari server
