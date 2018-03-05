@@ -342,7 +342,6 @@ function handle_api_3(cmd,query,closer,callback) {
     function get_stats(query,closer,callback) {
         console.log("Getting stats");
         try {
-<<<<<<< HEAD
            callback(null, {success:true,content:{
                "Free Memory": stats.freemem(),
                "Platform"   : stats.platform(),
@@ -350,9 +349,6 @@ function handle_api_3(cmd,query,closer,callback) {
                "CPU Usage (15 min load)"   : stats.loadavg(15)
            }
            });
-=======
-           callback(null, {success:true,content:stats.cpuUsage()});
->>>>>>> 78a1dcaa8153d1bea48ab5ea86a1112384fb09e0
         }
         catch(err) {
            callback(err);
